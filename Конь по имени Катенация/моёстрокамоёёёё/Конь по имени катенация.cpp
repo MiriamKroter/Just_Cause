@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cstring>
 using namespace std;
 void main()
@@ -8,11 +8,11 @@ void main()
 	char *b = new char[10];
 	char *c = new char[10];
 	int k = 0, n = 0;
-	cout << "Ñòðîêà a: ";
+	cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° a: ";
 	scanf("%s", a);
-	cout << "Ñòðîêà b: ";
+	cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° b: ";
 	scanf("%s", b);
-	cout << "Ñòðîêà ñ: ";
+	cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ñ: ";
 	scanf("%s", c);
 	cout << strcat(a, b) << endl;
 	char *R = strstr(a, c);
@@ -21,6 +21,6 @@ void main()
 		R = strstr(a + n + 1, c);
 		k++;
 	}
-	cout << "Êîë-âî âõîæäåíèé ñòðîêè 'ñ' â êîíêàòåíàöèþ ñòðîêè 'a' è 'b' ðàâíî: " << k << endl;
+	cout << "ÐšÐ¾Ð»-Ð²Ð¾ Ð²Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ð¹ ÑÑ‚Ñ€Ð¾ÐºÐ¸ 'Ñ' Ð² ÐºÐ¾Ð½ÐºÐ°Ñ‚ÐµÐ½Ð°Ñ†Ð¸ÑŽ ÑÑ‚Ñ€Ð¾ÐºÐ¸ 'a' Ð¸ 'b' Ñ€Ð°Ð²Ð½Ð¾: " << k << endl;
 	system("pause");
 }
